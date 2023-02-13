@@ -12,6 +12,16 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    
+    <header>
+        @include('partials.header')
+    </header>
+
+    <main>
+        @yield('main-content')
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
