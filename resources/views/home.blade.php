@@ -1,7 +1,7 @@
 
 @extends (' layouts.app ')
 
-@sezione ('main-content')
+@section ('main-content')
     <div  class = "container">
         <div  class = "row">
             <div class="col-12">

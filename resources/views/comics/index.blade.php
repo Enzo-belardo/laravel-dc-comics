@@ -3,6 +3,7 @@
 @section('title' , 'DC Comics')
 
 @section('main-content')
+<div class="container">
     <table class="table">
         <thead>
             <tr>
@@ -20,8 +21,10 @@
                 <td>{{ $comic->title }}</td>
                 <td>{{ $comic->price }}</td>
                 <td>{{ $comic->sale_date }}</td>
+                <td> <a class = "btn btn-sm btn-primary " href=" {{ route ( 'comics.show' , $comic->id ) }}" >View</a></td>
             </tr>
         </tbody>
         @endforeach 
     </table> 
+</div>
 @endsection
