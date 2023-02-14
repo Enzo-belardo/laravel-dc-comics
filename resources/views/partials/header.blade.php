@@ -14,6 +14,9 @@
                             Comics
                         </a>
                     </li>
+
+                    <a class="btn btn-primary me-3" href="{{route('comics.create')}}">crea un nuovo comics</a>
+            
                 </ul>
             </div>
         </div>
