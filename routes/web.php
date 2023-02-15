@@ -19,4 +19,4 @@ use App\Http\Controllers\ComicController;
 })->name('home');
 
 
- route::resource('comics', ComicController::class);
+ Route::resource('comics', ComicController::class);
