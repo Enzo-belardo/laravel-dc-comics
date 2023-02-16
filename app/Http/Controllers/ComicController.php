@@ -39,7 +39,7 @@ class ComicController extends Controller
         $data = $request->all();
 
         $request->validate([
-            'title' => 'required'
+            'title' => 'required |min:2|max:200'
         ]);
 
         $newComic = new Comic();
