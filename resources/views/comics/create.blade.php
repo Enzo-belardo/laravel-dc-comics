@@ -18,38 +18,38 @@
         @endif
         <div class="mb-3">
           <label class="form-label">titolo</label>
-          <input  type="text" class="form-control" id="" name="title">
+          <input  type="text" class="form-control" value="{{ $comic->title ?? old('title') }}" id="" name="title">
         </div>
 
         <div class="mb-3">
           <label class="form-label">thumb</label>
-          <input type="text" class="form-control" id="" name="thumb">
+          <input type="text" class="form-control" value="{{ $comic->thumb ?? old('title') }}" id="" name="thumb">
         </div>
 
         <div class="mb-3">
           <label class="form-label">descrizione</label>
-          <textarea type="text" id="" class="form-control" name="description"></textarea>
+          <textarea type="text" id="" value="{{ $comic->description ?? old('description') }}" class="form-control" name="description"></textarea>
         </div>
 
       
         <div class="mb-3">
           <label class="form-label">Prezzo</label>
-          <input type="text" class="form-control" id="" name="price" >
+          <input type="text" class="form-control" value="{{ $comic->price ?? old('price') }}" id="" name="price" >
         </div>
         
         <div class="mb-3">
             <label class="form-label">Serie</label>
-            <input type="text" class="form-control" id="" name="series" >
+            <input type="text" class="form-control" value="{{ $comic->series ?? old('series') }}" id="" name="series" >
         </div>
         
         <div class="mb-3">
           <label class="form-label">uscita</label>
-          <textarea type="text" id="" class="form-control" name="sale_date"></textarea>
+          <input type="text" id="" class="form-control" value="{{ $comic->sale_date ?? old('sale_date') }}" name="sale_date"></input>
         </div>
 
         <div class="mb-3">
           <label class="form-label">tipo</label>
-          <input type="text" class="form-control" id="" name="type" >
+          <input type="text" class="form-control" value="{{ $comic->type ?? old('type') }}" id="" name="type" >
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
